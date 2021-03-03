@@ -1,11 +1,25 @@
-import React from 'react'
+import React from "react";
+import useStyles from "./Styles";
+import Dummy from "./Dummy.json";
+import { Box } from "@material-ui/core";
+import { CarouselContent, CarouselIndicator } from "../../../../Components";
 
 const HomeCarousel = () => {
-    return (
-        <div>
-            Helo dari Carousel
-        </div>
-    )
-}
+  const classes = useStyles();
 
-export default HomeCarousel
+  return (
+    <Box className={classes.carouselBox}>
+      {/* OPEN TAG CAROUSEL */}
+      {/* {Dummy.map((value) => (
+        <CarouselContent
+          title={value.title}
+          subtitle={value.subtitle}
+          imageSource={value.image}
+        />
+      ))} */}
+      {/* CLOSE TAG CAROUSEL */}
+    </Box>
+  );
+};
+
+export default HomeCarousel;
