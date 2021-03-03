@@ -3,10 +3,21 @@ import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
 import Routes from './Routes'
 import "./index.css" //! Untuk reset smua css
+import { ThemeProvider, createMuiTheme } from '@material-ui/core'; //! Untuk custom theme Material UI
+
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      main: "#F15D2A"
+    }
+  }
+})
 
 ReactDOM.render(
   <React.StrictMode>
-    <Routes />
+    <ThemeProvider theme={theme}>
+      <Routes />
+    </ThemeProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

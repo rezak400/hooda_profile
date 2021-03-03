@@ -5,6 +5,9 @@ const Home = () => {
   return (
     <>
       <HomeCarousel />
+      <div style={{ height: "500px" }}>
+        apus aja ini ntar cuman biar ada space
+      </div>
     </>
   );
 };
