@@ -1,8 +1,9 @@
 import React from "react";
 import useStyles from "./Styles";
 import { Avatar, Box, Container, Typography } from "@material-ui/core";
+import { HoodaCarouselLogo } from "../../../Assets/Images";
 
-const CarouselIndicator = ({ title, subtitle, imageSource }) => {
+const CarouselItem = ({ title, subtitle, imageSource }) => {
   const classes = useStyles();
 
   return (
@@ -13,6 +14,11 @@ const CarouselIndicator = ({ title, subtitle, imageSource }) => {
         className={classes.carouselImage}
       />
       <Container className={classes.textContent}>
+        <Avatar
+          variant="square"
+          src={HoodaCarouselLogo}
+          className={classes.hoodaLogo}
+        />
         <Typography variant="h1" className={classes.title}>
           {title}
         </Typography>
@@ -24,4 +30,4 @@ const CarouselIndicator = ({ title, subtitle, imageSource }) => {
   );
 };
 
-export default CarouselIndicator;
+export default CarouselItem;

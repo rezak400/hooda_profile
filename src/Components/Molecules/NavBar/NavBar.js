@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Typography, AppBar } from '@material-ui/core'
+import { Typography, AppBar } from '@material-ui/core'
 
 const NavBar = () => {
     return (

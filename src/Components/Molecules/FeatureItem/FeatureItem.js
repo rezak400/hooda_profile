@@ -1,9 +1,9 @@
 import React from "react";
 import useStyles from "./Styles";
-import { Avatar, Box, Container, Typography } from "@material-ui/core";
+import { Box, Typography } from "@material-ui/core";
 import { FeatureImage } from "../../Atoms";
 
-const FeatureContent = ({ title, subtitle, image, reverse = false }) => {
+const FeatureItem = ({ title, subtitle, image, reverse = false }) => {
   const classes = useStyles();
 
   return (
@@ -26,4 +26,4 @@ const FeatureContent = ({ title, subtitle, image, reverse = false }) => {
   );
 };
 
-export default FeatureContent;
+export default FeatureItem;

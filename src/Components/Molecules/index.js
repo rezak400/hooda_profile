@@ -1,6 +1,6 @@
 import Navbar from "./NavBar";
 import Footer from "./Footer";
-import CarouselContent from "./CarouselContent";
-import FeatureContent from "./FeatureContent";
+import CarouselItem from "./CarouselItem";
+import FeatureItem from "./FeatureItem";
 
-export { Navbar, Footer, CarouselContent, FeatureContent };
+export { Navbar, Footer, CarouselItem, FeatureItem };

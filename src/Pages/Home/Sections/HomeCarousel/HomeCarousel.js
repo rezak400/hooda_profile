@@ -3,7 +3,7 @@ import useStyles from "./Styles";
 import Dummy from "./Dummy.json";
 import { Carousel } from "react-responsive-carousel";
 import { Box } from "@material-ui/core";
-import { CarouselContent, CarouselIndicator } from "../../../../Components";
+import { CarouselItem, CarouselIndicator } from "../../../../Components";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const HomeCarousel = () => {
@@ -24,7 +24,7 @@ const HomeCarousel = () => {
         )}
       >
         {Dummy.map((value, index) => (
-          <CarouselContent
+          <CarouselItem
             key={index}
             title={value.title}
             subtitle={value.subtitle}

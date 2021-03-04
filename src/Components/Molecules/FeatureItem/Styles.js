@@ -53,7 +53,7 @@ export default makeStyles((theme) => ({
     },
     [theme.breakpoints.down("sm")]: {
       fontSize: 14,
-      lineHeight: "30px",
+      lineHeight: "28px",
     },
   },
   gap: {
