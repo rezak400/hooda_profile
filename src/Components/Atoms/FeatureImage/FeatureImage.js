@@ -8,7 +8,9 @@ const FeatureImage = ({ srcImage, reverse }) => {
   return (
     <Box
       className={
-        reverse ? classes.containerReverse : classes.containerNoReverse
+        reverse 
+        ? classes.containerReverse 
+        : classes.containerNoReverse
       }
     >
       <Box className={classes.shape} />

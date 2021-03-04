@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/styles";
 export default makeStyles((theme) => ({
   containerNoReverse: {
     display: "flex",
-    marginBottom: 90,
+    marginBottom: 70,
     justifyContent: "center",
     alignItems: "center",
     [theme.breakpoints.up("md")]: {
@@ -15,7 +15,7 @@ export default makeStyles((theme) => ({
   },
   containerReverse: {
     display: "flex",
-    marginBottom: 90,
+    marginBottom: 70,
     justifyContent: "center",
     alignItems: "center",
     [theme.breakpoints.up("md")]: {

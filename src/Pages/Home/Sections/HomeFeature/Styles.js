@@ -6,7 +6,7 @@ export default makeStyles((theme) => ({
     display: "flex",
     flexDirection: "column",
     paddingTop: 60,
-    paddingBottom: 80,
+    paddingBottom: 60,
     [theme.breakpoints.up("xs")]: {
       maxWidth: 640,
       paddingInline: "1.5rem",
