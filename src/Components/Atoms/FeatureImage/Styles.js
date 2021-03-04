@@ -22,13 +22,13 @@ export default makeStyles((theme) => ({
   shape: {
     backgroundColor: theme.palette.primary.main,
     borderRadius: 8,
-    [theme.breakpoints.up("sm")]: {
+    [theme.breakpoints.up("xs")]: {
       width: 384,
       height: 384,
     },
-    [theme.breakpoints.down("sm")]: {
-      width: 288,
-      height: 288,
+    [theme.breakpoints.down("xs")]: {
+      width: 240,
+      height: 240,
     },
   },
   image: {
@@ -36,13 +36,13 @@ export default makeStyles((theme) => ({
     objectFit: "cover",
     position: "absolute",
     top: 30,
-    [theme.breakpoints.up("sm")]: {
+    [theme.breakpoints.up("xs")]: {
       width: 384,
       height: 384,
     },
-    [theme.breakpoints.down("sm")]: {
-      width: 288,
-      height: 288,
+    [theme.breakpoints.down("xs")]: {
+      width: 240,
+      height: 240,
     },
   },
 }));

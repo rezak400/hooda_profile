@@ -3,25 +3,25 @@ import { makeStyles } from "@material-ui/styles";
 export default makeStyles((theme) => ({
   containerNoReverse: {
     display: "flex",
-    marginBottom: 120,
+    marginBottom: 90,
     justifyContent: "center",
     alignItems: "center",
-    [theme.breakpoints.up("lg")]: {
+    [theme.breakpoints.up("md")]: {
       flexDirection: "row",
     },
-    [theme.breakpoints.down("lg")]: {
+    [theme.breakpoints.down("md")]: {
       flexDirection: "column-reverse",
     },
   },
   containerReverse: {
     display: "flex",
-    marginBottom: 120,
+    marginBottom: 90,
     justifyContent: "center",
     alignItems: "center",
-    [theme.breakpoints.up("lg")]: {
+    [theme.breakpoints.up("md")]: {
       flexDirection: "row-reverse",
     },
-    [theme.breakpoints.down("lg")]: {
+    [theme.breakpoints.down("md")]: {
       flexDirection: "column-reverse",
     },
   },
@@ -29,19 +29,19 @@ export default makeStyles((theme) => ({
     display: "flex",
     flexDirection: "column",
     [theme.breakpoints.up("lg")]: {
-      fontSize: 36,
+      marginTop: 50,
     },
     [theme.breakpoints.down("lg")]: {
-      fontSize: 30,
+      marginTop: 50,
     },
   },
   title: {
     marginBottom: 28,
     fontWeight: 700,
-    [theme.breakpoints.up("lg")]: {
+    [theme.breakpoints.up("sm")]: {
       fontSize: 36,
     },
-    [theme.breakpoints.down("lg")]: {
+    [theme.breakpoints.down("sm")]: {
       fontSize: 30,
     },
   },
@@ -57,10 +57,10 @@ export default makeStyles((theme) => ({
     },
   },
   gap: {
-    [theme.breakpoints.up("lg")]: {
-      width: 600,
+    [theme.breakpoints.up("md")]: {
+      width: 700,
     },
-    [theme.breakpoints.down("lg")]: {
+    [theme.breakpoints.down("md")]: {
       height: 40,
     },
   },
