@@ -1,3 +1,4 @@
 import CarouselIndicator from "./CarouselIndicator";
+import FeatureImage from "./FeatureImage";
 
-export { CarouselIndicator };
+export { CarouselIndicator, FeatureImage };

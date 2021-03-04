@@ -1,17 +1,30 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import reportWebVitals from './reportWebVitals';
-import Routes from './Routes'
-import "./index.css" //! Untuk reset smua css
-import { ThemeProvider, createMuiTheme } from '@material-ui/core'; //! Untuk custom theme Material UI
+import React from "react";
+import ReactDOM from "react-dom";
+import reportWebVitals from "./reportWebVitals";
+import Routes from "./Routes";
+import "./index.css"; //! Untuk reset smua css
+import { ThemeProvider, createMuiTheme } from "@material-ui/core"; //! Untuk custom theme Material UI
 
 const theme = createMuiTheme({
   palette: {
     primary: {
-      main: "#F15D2A"
+      main: "#F15D2A",
+    },
+  },
+  typography: {
+    fontFamily: ['"Montserrat"', "sans-serif"],
+  },
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 640,
+      md: 768,
+      lg: 1024,
+      xl: 1280,
+      xxl: 1536,
     }
-  }
-})
+  },
+});
 
 ReactDOM.render(
   <React.StrictMode>
@@ -19,7 +32,7 @@ ReactDOM.render(
       <Routes />
     </ThemeProvider>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function

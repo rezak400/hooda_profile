@@ -1,3 +1,4 @@
-import HomeCarousel from './HomeCarousel';
+import HomeCarousel from "./HomeCarousel";
+import HomeFeature from "./HomeFeature";
 
-export { HomeCarousel }
+export { HomeCarousel, HomeFeature };
