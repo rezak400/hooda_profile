@@ -5,7 +5,7 @@ export default makeStyles((theme) => ({
     margin: "auto",
     display: "flex",
     flexDirection: "column",
-    paddingBottom: 40,
+    paddingBottom: 100,
     [theme.breakpoints.up("xs")]: {
       maxWidth: 640,
       paddingInline: "1.5rem",
@@ -28,7 +28,7 @@ export default makeStyles((theme) => ({
     },
   },
   title: {
-    marginBottom: 28,
+    marginBottom: 50,
     fontWeight: 700,
     [theme.breakpoints.up("sm")]: {
       fontSize: 36,

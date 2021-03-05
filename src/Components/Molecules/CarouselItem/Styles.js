@@ -3,19 +3,19 @@ import { makeStyles } from "@material-ui/styles";
 export default makeStyles((theme) => ({
   hoodaLogo: {
     objectFit: "cover",
-    [theme.breakpoints.up("md")]: {
-      width: 242,
-      height: 208,
+    [theme.breakpoints.down("sm")]: {
+      width: 120,
+      height: 105,
+      marginBottom: 20,
     },
     [theme.breakpoints.up("sm")]: {
       width: 180,
       height: 160,
       marginBottom: 28,
     },
-    [theme.breakpoints.down("sm")]: {
-      width: 120,
-      height: 105,
-      marginBottom: 20,
+    [theme.breakpoints.up("md")]: {
+      width: 230,
+      height: 196,
     },
   },
   carouselImage: {
