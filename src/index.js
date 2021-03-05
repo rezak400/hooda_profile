@@ -2,8 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 import reportWebVitals from "./reportWebVitals";
 import Routes from "./Routes";
-import "./index.css"; //! Untuk reset smua css
-import { ThemeProvider, createMuiTheme } from "@material-ui/core"; //! Untuk custom theme Material UI
+// import "./index.css"; //! Untuk reset smua css
+import { ThemeProvider, createMuiTheme, CssBaseline } from "@material-ui/core"; //! Untuk custom theme Material UI
 
 const theme = createMuiTheme({
   palette: {
@@ -19,7 +19,7 @@ const theme = createMuiTheme({
       xs: 0,
       sm: 640,
       md: 768,
-      lg: 1024,
+      lg: 1072,
       xl: 1280,
       xxl: 1536,
     }
@@ -29,6 +29,7 @@ const theme = createMuiTheme({
 ReactDOM.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
+      <CssBaseline />
       <Routes />
     </ThemeProvider>
   </React.StrictMode>,
