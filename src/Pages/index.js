@@ -1,4 +1,5 @@
 import Home from "./Home";
 import About from "./About";
+import Version from "./Version";
 
-export { Home, About };
+export { Home, About, Version };
