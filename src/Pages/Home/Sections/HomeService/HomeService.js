@@ -18,7 +18,7 @@ const HomeService = () => {
       <Typography variant="h1" className={classes.title}>
         Layanan Tersedia
       </Typography>
-      <Grid container spacing={4}>
+      <Grid container spacing={4} justify="center">
         <Grid item xs={12} sm={6} md={4} lg={3} xl>
           <ServiceItem
             name="Today"
